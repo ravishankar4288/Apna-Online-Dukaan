@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= LEVEL-4, initial-scale=1.0">
+    <title>Level-4</title>
+</head>
+<body>
+    <!--List in HTML-->
+    <!--(1) Unordered list-->
+    <h3> This is the Unordered list</h3>
+    <ul>
+        <li>Apple</li>
+        <ul> 
+            <li> color : Red </li>
+            <li> Price : 100/kg</li>
+        </ul>
+
+        <li>Mango</li>
+        <ul>
+            <li>color : Green </li>
+            <li>Price : 120/kg</li>
+        </ul>
+
+        <Li>Orange</Li>
+        <ul>
+            <li>color : Orange color</li>
+            <li>Price : 40/kg</li>
+        </ul>
+    </ul>
+
+
+    <!--(2) Ordered list-->
+    <h3>This is the Ordered list </h3>
+    <ol>
+        <li>Apple</li>
+        <ul> 
+            <li> color : Red </li>
+            <li> Price : 100/kg</li>
+        </ul>
+
+        <li>Mango</li>
+        <ul>
+            <li>color : Green </li>
+            <li>Price : 120/kg</li>
+        </ul>
+
+        <Li>Orange</Li>
+        <ul>
+            <li>color : Orange color</li>
+            <li>Price : 40/kg</li>
+        </ul>
+    </ol>
+
+
+<!--*******************************************************************************************-->
+    <br>
+    <!--Tables in HTML-->
+    <h3> This is the Tables in HTML</h3>
+
+    <table>
+        <!--Caption in Tables-->
+        <caption>  Data of Students </caption> 
+
+     <thead>
+        <tr>
+             
+            <th> NAME </th>
+            <th> SID</th>
+            <th> BRANCH</th>
+              
+        </tr>
+     </thead>
+
+
+     <tbody>
+        <tr>
+            <td>Pranav singh</td>
+            <td>21104126</td>
+            <td>Electrical</td>
+        </tr>
+
+        <tr>  
+            <td>Alok</td>
+            <td>21104127</td>
+            <td>Electrical</td>
+        </tr>
+
+        <tr> 
+            <td>Ravishankar </td>
+            <td>21104128</td>
+            <td>Electrical</td>
+        </tr>
+
+        <tr>
+            <td>Manobal</td>
+            <td>21104129</td>
+            <td>Electrical</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+
+    <br>
+    <!--colspan attribute-->
+    <table>
+        <!--Caption in Tables-->
+        <caption>  Data of Students </caption> 
+
+     <thead>
+        <tr>
+            <th colspan="3">INFORMATION ABOUT STUDENTS</th> 
+              
+        </tr>
+     </thead>
+
+
+     <tbody>
+        <tr>
+            <td>Pranav singh</td>
+            <td>21104126</td>
+            <td>Electrical</td>
+        </tr>
+
+        <tr>  
+            <td>Alok</td>
+            <td>21104127</td>
+            <td>Electrical</td>
+        </tr>
+
+        <tr> 
+            <td>Ravishankar </td>
+            <td>21104128</td>
+            <td>Electrical</td>
+        </tr>
+
+        <tr>
+            <td>Manobal</td>
+            <td>21104129</td>
+            <td>Electrical</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+<!--****************************************************************************************-->
+    <br>
+    <!--Form in HTML-->
+    <h3> this is the Form in HTML</h3>
+    <form action = "/action.php">
+        <!--(1) Form Element : Input-->
+        <h4>Enter your username and password</h4>
+        <input type="text" placeholder="username or email id">
+        <input type="password" placeholder="password">
+
+<br>
+<br>
+        <!--(2)Form Element : Lebel-->
+        <h4>select your class</h4>
+        <label for="101">
+        <input type ="radio" value = "class XI" name="class" id="101">class XI
+        </label>
+  
+        <label for="102">
+        <input type = "radio" value=" class XII" name="class" id="102">class XII
+        </label>
+
+        <label for="103">
+        <input type="radio" value="class XII" name="class" id="103">class XIII
+        </label>
+
+   <!--(3)Class & Id-->
+
+
+<br>
+<br>  <!--(4)Checkbox-->
+      <h4>select your fav subjects</h4>
+      <label for="math">
+        <input type="checkbox" value="math" name="subject" id="1001">math
+      </label>
+
+      <label for="physics">
+        <input type="checkbox" value="physics" name="subject" id="1002">physics
+      </label>
+
+      <label for="chemistry">
+        <input type="checkbox" value="chemistry" name="subject" id="1003">chemistry
+      </label>
+
+      <label for="Hindi">
+        <input type="checkbox" value="Hindi" name="subject" id="1004">Hindi
+      </label>
+
+      <label for="English">
+        <input type="checkbox" value="English" name="subject" id="1005">English
+      </label>
+
+      <label for="computer scince">
+        <input type="checkbox" value="computer scince" name="subject" id="1006">computer scince
+      </label>
+
+<br>
+<br>   <!--(5) Select-->    
+       select your state  
+       <select>
+        <option value="Bihar">Bihar</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajsthan">Rajsthan</option>
+        <option value="U.P">U.P</option>
+        <option value="Hariyana">Hariyana</option>
+       </select>
+
+      
+<br>
+<br>  <!--(6)Textarea-->
+      <textarea name="feddback" id="101" placeholder="please give your feedback" rows="5">feedback</textarea>
+      
+
+<br>
+<br>   <!--submit-->  
+       <input type="submit" value="submit">
+    </form>
+
+<br>
+<br>
+
+    <!--********************************************************************************-->
+    <!--inframe-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OXGznpKZ_sA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <br>
+    <br>
+    <iframe src="https://www.wikipedia.org/" allowfullscreen></iframe>
+    
+
+<br>
+<br> <!--**********************************************************************************-->
+     <!--video Tag-->
+     <video width="560" height="315" src="myvideo.mp4" controls autoplay></video>
+</body>
+</html>

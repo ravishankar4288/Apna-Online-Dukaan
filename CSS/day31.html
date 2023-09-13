@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selector</title>
+    <style>
+        /* div p{
+            background-color: antiquewhite;
+            color: rgb(13, 13, 144);
+            text-align: center;
+        } */
+
+        
+        /* if p is right inside div then this CSS will be applied */
+        /* div > p{                               p ka wah pragraph jo div direct bad ho wahi effect hoga
+            background-color: antiquewhite;
+            color: rgb(13, 13, 144);
+            text-align: center;
+        } */
+
+
+        /* if p is right after div i.e p is the next sibling of div*/
+        div + p{                               /*p ka wah pragraph jo div sibling ho wahi effect hoga*/
+            background-color: antiquewhite;
+            color: rgb(13, 13, 144);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="itemUpper">
+     <ul>
+        <p>helllo this the praghrph of inside of ul</p>
+     </ul>
+            <div class="itemlast">
+                <p>this is the last pragraph</p>
+            </div>
+            <p>hello , i am outside </p>
+    </div>
+    <p>outside the pragraph</p>
+    
+</body>
+</html>

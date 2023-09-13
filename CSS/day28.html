@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box in CSS</title>
+    <style>
+        .container{
+            height: 600px;
+            width:100%;
+            border: 5px solid rgb(50, 62, 49);
+            /* Initialization of felx box  */
+            display: flex;
+
+            /* properties of flex box */
+            /* flex-direction: row; (Default value of flex-direction is row) */
+            flex-direction: row;
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            /*flex-flow: row-reverse wrap-reverse;      it is a combination of 'flex-directio' and 'flex-wrap'*/
+
+
+            /* justify-content will justify the content in horizontal direction */
+            /* justify-content: center;             
+            justify-content: space-between;      
+            justify-content: space-evenly;       
+            justify-content: space-around;   */
+
+            /* justify-content will justify the content in vertical direction */
+            align-items: start;
+            align-items:center ;
+            align-items: end;
+            align-items: stretch;
+    
+        }
+
+        .item{
+            height: 150px;
+            width: 150px;
+            background-color: cadetblue;
+            border: 2px solid salmon;
+            margin: 2px 2px;
+            padding: 4px 4px;
+        }
+
+        #item-1{
+            /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: 4; */
+
+            /* flex-grow: 5; */
+            /* flex-shrink: 4; */
+
+            /* flex-basis: 250px; */
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+
+        }
+        #item-2{
+            /* order: 3; */
+            /* flex-grow: 2; */
+            /* flex: 2 5 300px;    it is combination of flex-grow , flex-shrink and flex-basis */
+
+        }
+        #item-3{
+            /* order: 1; */
+            /* flex-grow: 1; */
+
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img">
+        <h1>This is the image of Flexbox </h1>
+        <p><img src="https://blog.codehunger.in/wp-content/uploads/2020/05/image-18.png" alt=""></p>
+        <br>
+        <hr>
+    </div>
+
+    <h1>FLEXBOX</h1>
+    <div class="container">
+    <div class="item" id="item-1">first box</div>
+    <div class="item" id="item-2">second box</div>
+    <div class="item" id="item-3">third box</div>
+    <!-- <div class="item" id="item-4">fourth box</div>
+    <div class="item" id="item-5">fifth box</div>
+    <div class="item" id="item-6">sixth box</div> -->
+</div>
+</body>
+</html>

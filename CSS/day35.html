@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables/custom properties</title>
+    <style>
+        :root{
+            --box-color:rgb(232, 209, 79); /* this is the valid every class */
+            --primary-color:green;
+            --secondry-color: rgb(0, 128, 255);
+            --maxw:200px;
+        }
+        .container{
+            display: flex;
+            background-color: var(--secondry-color);
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+        .box{
+            /* --box-color:rgb(232, 209, 79);   this is the valid for only this scope */
+            width: var(--maxw);
+            height: var(--maxw);
+            border: 2px solid var(--primary-color);
+            margin: 10px 8px ;
+            background-color: var(--primary-color);
+            box-shadow: 10px 30px var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">PEC </div>
+        <div class="box">chandigarh</div>
+        <div class="box">btech</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .card{
+            background-color: rgb(92, 205, 209);
+            border: 2px solid rgb(229, 18, 18);
+            padding: 10px 10px;
+            margin: 15px 15px;
+            box-shadow: 10px 10px rgb(226, 116, 171);   /*THIS is shadow*/
+            box-shadow: -10px -10px rgb(226, 116, 171);  /*THIS is inverted shadow*/
+
+            box-shadow: 10px 10px 10px rgb(141, 248, 141); /*THIS is blur shadow*/
+            box-shadow: -10px -10px 10px rgb(141, 248, 141); /*THIS is inverted blur shadow*/
+
+            box-shadow: 10px 10px 10px 10px rgba(14, 185, 14, 0.8); /*THIS is spread-radius shadow*/
+            box-shadow: -10px -10px 10px 10px rgba(79, 13, 212, 0.6); /*THIS is inverted spread-radius shadow*/
+            /* in the rgba a is denoted as darkness */
+
+            box-shadow: inset 10px 10px gold;   /*this shadow is inside the box */
+
+            box-shadow: 10px 10px hotpink , 20px 20px rgb(202, 151, 22);  /*this is the multiple box shadow radius */
+        }
+
+        .card h1{
+            text-shadow: 10px 10px gray;    /*this is the text-shadow */
+            text-shadow: -10px -10px gray;    /*this is the inverted text-shadow */
+            text-shadow: 10px 10px 10px rgb(224, 27, 27);    /*this is the blur text-shadow */
+            text-shadow: -10px -10px 10px rgb(224, 27, 27);    /*this is the inverted blur text-shadow */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>This is the c++ course</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam soluta corporis, odio exercitationem quo sed quibusdam totam pariatur inventore quaerat assumenda eligendi saepe fugiat modi autem error nesciunt itaque dolorem.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>This is the python course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro voluptatum quasi perspiciatis ipsa. Nemo officiis dicta minima! Corporis similique autem repellat, exercitationem minus sunt ratione voluptatem, molestiae magnam possimus accusamus!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>This is the Java course</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi libero eum dolores maxime illum iure ea harum voluptate, numquam impedit, optio debitis fuga deleniti, tenetur dolor at minima minus assumenda?</p>
+        </div>
+    
+</body>
+</html>

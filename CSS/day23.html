@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    
+    <style>
+        .navbar{
+            background-color: rgb(172, 234, 172);
+            border-radius: 12px;
+           
+        }
+
+        .navbar ul{  /*this help to maitain the background color*/
+            overflow: auto;
+        }
+ 
+        .navbar li{
+            float: left; /*all ul element come in a line*/
+            list-style: none;  /*this remove bold point */
+            margin: 20px 1px;
+            padding: 9px 15px;
+        }
+
+        .navbar li a{
+            padding: 2px 2px;
+            text-decoration: none;
+        }
+
+        
+        .navbar li a:hover{
+            color: rgba(175, 41, 88, 0.783);
+            background-color: azure;
+        }
+
+        .search{
+            float: right;
+            color: rgb(107, 75, 33);
+            padding: 26px 7px;
+            margin: 1px 55px;
+        }
+
+        .navbar input{
+            border: 6px solid #a8b2ef;
+            border-radius: 20px;
+            padding: 7px 9px;
+            margin: -17px -31px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+        <ul>
+           <li><a href="#">Home </a></li>
+           <li><a href="#">About us</a></li>
+           <li><a href="#">services</a></li>
+           <li><a href="#">contact us</a></li>
+
+           <div class="search">
+            <input type="text" name="search" id="search" placeholder="search here">
+           </div>
+                      
+        </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

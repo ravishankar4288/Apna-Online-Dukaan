@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position property</title>
+    <style>
+
+        .container{
+            border: 5px solid rgb(232, 61, 61);
+            height: 3444px;
+        }
+        /* CSS position: static(default) , relative , absolute , fixed , sticly  */
+        .box{
+            border: 3px solid blue;
+            margin: 4px;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        #box3{
+            /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+            /* position: relative;
+            top: 20px;
+            left: 40px; */
+        } 
+
+        #box3{
+            /* absolute: Positions the element relative to the positon of its first parent*/
+            /* position: absolute;
+            top: 20px;
+            left: 40px; */
+        } 
+
+        #box3{
+            /* fixed: Positions the element relative to the browser window; */
+            /* position: fixed;
+            right: 100px;  /*this distance from screen of right side*/
+            /*bottom: 100px; this distance from screen of bottom side */
+        }
+
+        #box3{
+            /* sticky: Positions the element relative to the users scroll position */
+            position: sticky;
+            top: 100px;      /*this distance from screen of top side and its original position */
+            bottom: 100px;  /* this distance from screen of down side and its original position */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">more details</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+    </div>
+    
+</body>
+</html>

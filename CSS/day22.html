@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing </title>
+    <style>
+        .container{
+            border: 5px solid rgb(243, 66, 66);
+            background-color: rgb(185, 185, 241);
+            padding: 20px;
+            margin: 25px auto;
+            width: 700px;    
+        }
+
+        .btn{
+            background-color: rgb(224, 122, 200);
+            padding: 5px;
+            border: none;
+            cursor: pointer; /*its help we arrive the link page */
+            font-size: 12px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 8px;
+        }  
+        
+        .btn:hover{
+            color:darkgoldenrod;
+            background-color:rgb(223, 245, 201);
+            border: 2px solid black;
+        }
+
+
+        a{
+            text-decoration: none; /*it remove underline*/
+            color: black;
+        }
+
+        a:hover{ /*this function work when you click the buttom*/
+            color: rgb(66, 66, 242);
+            background-color: cadetblue;
+        }
+
+        a:visited{/*this funtion work after click buttom*/
+            background-color: white;
+        }
+        
+        a:active{   /*this function is also work when you click the buttom*/
+            background-color: rgb(59, 235, 141);   
+        }
+
+        h3{
+            width: 66%;
+            margin: auto;
+        }
+
+      
+    </style>
+
+</head>
+<body>
+    <div class="container" id="count1">
+        <h3>This is the topic of Pseudo selectors and more designing </h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam eos, et maiores accusamus repudiandae cum delectus praesentium numquam, laboriosam magnam mollitia corrupti perspiciatis, assumenda deleniti asperiores iure quo provident ea dolores. Vero, illo similique.</p>
+
+        <a href="https://google.com" class="btn">Read more </a>
+        <button class="btn">Contact us</button>
+
+    </div>
+
+    
+</body>
+</html>

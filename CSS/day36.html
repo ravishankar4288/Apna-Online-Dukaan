@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+<style>
+    .container{
+        background-color: rgb(187, 228, 84);
+        margin: 150px;
+
+    }
+
+    .box{
+        width: 50px;
+        height: 50px;
+        border: 2px solid red;
+        color: black;
+        background-color: rgb(62, 131, 133);
+        position: relative;
+        /* animation-name: ravi; */
+
+        animation-name: ravi2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+
+        /* animation-fill-mode: alternate;   after complte our task come in intial phase */
+        animation-fill-mode:forwards;     /*after complte our task stop in last phase*/
+/* 
+        animation-timing-function: ease-in;  in ending time animation is fast
+        animation-timing-function: ease-out; in starting time animation is fast
+        animation-timing-function: ease-in-out;  animation is fast middle time */
+
+        /* animation-delay: 2s; */
+
+        /* animation-direction: normal;
+        animation-direction: alternate-reverse;
+        animation-direction: alternate;
+        animation-direction: reverse; */ 
+
+        
+        /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: harry 5s ease-in 1s 12 backwards; */
+       
+ 
+    }
+
+    @keyframes ravi{
+        from{
+        width: 50px;
+        }
+
+        to{
+            width: 400px;
+
+        }
+    }
+
+    @keyframes ravi2{
+        0%{
+            top: 0px;
+            left: 0%;
+        }
+
+        8.33%{
+            top: -50px;
+            left: 8.33%;
+        }
+
+        16.6%{
+            top: -100px;
+            left: 16.6%;
+        }
+
+        24.99%{
+            top: -150px;
+            left: 24.99%;
+        }
+
+        33.32%{
+            top: -100px;
+            left: 33.32%;
+        }
+
+        41.65%{
+            top: -50px;
+            left: 41.65%;
+        }
+
+        49.98%{
+            top: 0px;
+            left: 49.98%;
+        }
+
+        58.31%{
+            top: 50px;
+            left: 58.31%;
+        }
+
+        66.64%{
+            top: 100px;
+            left: 66.64%;
+        }
+
+        74.97%{
+            top: 150px;
+            left: 74.97%;
+        }
+
+        83.3%{
+            top: 0px;
+            left: 83.3%;
+        }
+
+        /*  91.63%{
+            top: 0px;
+            left: 91.63%;
+        }
+
+        100%{
+            top: 0px;
+            left: 100%; 
+        } */
+
+
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is the box
+        </div>
+    </div>
+</body>
+</html>

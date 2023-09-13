@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        body{
+            background-color: rgb(241, 194, 241);
+        }
+
+        .box{
+            width: 500px;
+            height: 336px;
+            background-image: url(https://www.freecodecamp.org/news/content/images/2022/05/CSS-GRID-3.png);
+            background-size: contain;
+            color: rgb(210, 65, 36);
+            
+
+        }
+
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: 300px auto 300px; */
+            /* grid-template-columns: auto 300px 300px; */
+            /* grid-template-columns: 300px 300px auto; */
+
+            grid-template-columns: 1fr 2fr 1fr 2fr 1fr;  /*this divied space in given data*/
+            grid-template-columns: repeat(6,auto);   /*this is the short-court method for grid*/
+            grid-gap: 10px;
+        }
+
+        .item{
+            /* width: 150px;
+            height: 150px; */
+            border: 2px solid green;
+            border-radius: 20px;
+            background-color: aqua;
+            margin: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>   
+        <div class="box">
+            <h2>This is the image of grid</h2>
+        </div>
+        <br><br>
+
+
+    <div class="container">
+       <div class="item">This is the box1</div>
+       <div class="item">This is the box2</div>
+       <div class="item">This is the box3</div>
+       <div class="item">This is the box4</div>
+       <div class="item">This is the box5</div>
+       <div class="item">This is the box6</div>
+       <div class="item">This is the box7</div>
+       <div class="item">This is the box8</div>
+       <div class="item">This is the box9</div>
+       <div class="item">This is the box10</div>
+       <div class="item">This is the box11</div>
+       <div class="item">This is the box12</div>
+       <div class="item">This is the box13</div>
+       <div class="item">This is the box14</div>
+       <div class="item">This is the box15</div>
+       <div class="item">This is the box16</div>
+       <div class="item">This is the box17</div>
+       <div class="item">This is the box18</div>
+       <div class="item">This is the box19</div>
+       <div class="item">This is the box20</div>
+       <div class="item">This is the box21</div>
+       <div class="item">This is the box22</div>
+       <div class="item">This is the box23</div>
+       <div class="item">This is the box24</div>
+       <div class="item">This is the box25</div>
+       <div class="item">This is the box26</div>
+       <div class="item">This is the box27</div>
+       <div class="item">This is the box28</div>
+       <div class="item">This is the box29</div>
+       <div class="item">This is the box30</div>
+    </div>
+</body>
+</html>

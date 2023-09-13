@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size units</title>
+    <style>
+        .html{
+            font-size: 20px;
+        }
+        .container{
+            /* width: 400px;
+            height: 300px; */
+            width: 100vw;       /*full screen width*/
+            height: 100vh;      /* full screen height*/
+            font-size: 10px;
+            border: 2px solid rgb(115, 171, 30);
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        #first{
+            /* font-size: 5em;  N-em means , bigger than N times of original size (container size) */
+            /* padding: 3em;   here padding = font-size*N (10*5*3=150px)   */
+        }
+
+        #second{
+            /* font-size: 5rem;  here,  font-size = 20*5px      */
+            /* padding: 5rem;    also here,  padding = 20*5px   */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is the first headding</h1>
+        <h1 id="second">This is the second headding</h1>
+        <h1 id="third">This is the third headding</h1>
+    </div>
+    
+</body>
+</html>

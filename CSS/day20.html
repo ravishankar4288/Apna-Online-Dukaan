@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+       #image{
+        height: 400px;
+        width: 400px;
+        background-image: url(https://tse3.mm.bing.net/th?id=OIP.6ZmIelGTo9wJ1-CFoFOcDgHaFu&pid=Api&P=0);
+        background-size: 400px 400px;
+       }
+
+       body{
+        background-color: aqua;
+       }
+       .container{
+           background-color: aliceblue;
+           border: 8px solid rgb(195, 171, 219);
+           border-radius: 10px;
+
+           /* padding-top: 50px;
+           padding-bottom: 50px;
+           padding-left: 50px;
+           padding-right: 50px; */
+           /* padding: 50px 50px 50px 50px; */
+
+           /* margin-top: 80px;
+           margin-bottom: 80px;
+           margin-left: 80px;
+           margin-right: 80px; */
+           /* margin: 80px 80px 80px 80px ; */
+
+            /* padding: y(top/bottom) x(left/right); */
+            /* margin: y(top/bottom) x(left/right); */
+            padding: 50px 60px;
+            margin: 30px 40px;
+            width: 500px;
+         box-sizing: border-box;
+       }
+    </style>
+
+
+</head>
+<body>
+    <h3> This is the topic of box model</h3>
+    <p id="image"> </p>
+
+    <br>
+    <div class="container">
+       <h3>This is the first box model</h3>
+       <pre> Hello Hello Hello Hello  Hello Hello Hello 
+        Hello Hello Hello Hello Hello Hello Hello Hello  </pre>
+    </div>
+    <br>
+
+    <div class="container">
+        <h3>This is the first box model</h3>
+        <pre> Hello Hello Hello Hello  Hello Hello Hello 
+         Hello Hello Hello Hello Hello Hello Hello Hello   </pre>
+    </div>
+     <br>
+
+    <div class="container">
+        <h3>This is the first box model</h3>
+        <pre> Hello Hello Hello Hello  Hello Hello Hello 
+         Hello Hello Hello Hello Hello Hello Hello Hello  </pre>
+    </div>
+
+
+</body>
+</html>

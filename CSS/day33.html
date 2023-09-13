@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selectors</title>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body{
+            background-color: rgb(108, 237, 237);
+            color: rgb(185, 10, 36);
+            margin: 0px;
+            padding: 0px;
+            /* background: url(https://images.unsplash.com/photo-1444492417251-9c84a5fa18e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60) no-repeat center center/cover; */
+        }
+
+        header::before{
+            content: "";
+            background: url(https://images.unsplash.com/photo-1444492417251-9c84a5fa18e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyZWV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60) no-repeat center center/cover;
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+
+        .navigation{
+            display: flex;  /* horizontal lines ko ek line me ana */
+        }
+
+        li{
+            list-style: none;  /*after this, point is removed from every li element */
+            font-weight: bold;
+            margin: 11px;
+            padding: 10px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 20px;
+        }
+
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 180px;
+            padding: 0px 15px;
+            /* border: 2px solid rgb(72, 157, 242); */
+            text-align: center;
+            height: 225px;
+            justify-content: center;
+        }
+        h1{
+            font-size: 40px;
+        }
+        p{
+            text-align: center;
+        }
+
+
+        /* section::before{
+            content: "Hello I am Ravishankar";
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About us</li>
+                <li class="item">Sevices</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+            <section>
+            <h1>Welcome to shankar world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorem veritatis vel blanditiis ab! Sequi harum alias eius laudantium est, nihil cupiditate ipsum quidem aut perferendis laboriosam officiis. Obcaecati, sunt.</p>
+        </section>
+        
+</body>
+</html>

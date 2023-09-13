@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 40px;
+            text-align: center;
+            background-color: aqua;
+            color: blueviolet;
+            display: none;
+        }
+
+        @media only screen and (max-width: 400px){
+            #box-1{
+               display: block;
+               background-color: cadetblue;
+            }
+        }
+
+        @media only screen and (min-width: 400px) and (max-width: 600px){
+            #box-2{
+                display: block;
+                background-color: rgb(231, 75, 176);
+            }
+        }
+
+        
+        @media (min-width: 600px) and (max-width: 800px) {
+            #box-3{
+                display: block;
+                background-color: rgba(135, 231, 75, 0.801);
+            }
+        }
+
+        @media (min-width: 800px)  {
+            #box-4{
+                display: block;
+                background-color: rgb(140, 75, 231);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Hello </div>
+    <div class="box" id="box-2">I am Ravishankar kumar</div>
+    <div class="box" id="box-3">I am student of PEC Chandigarh</div>
+    <div class="box" id="box-4">And I am Bihari</div>
+    
+</body>
+</html>
